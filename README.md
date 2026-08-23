@@ -224,12 +224,15 @@ const definicaoPacote = protoLoader.loadSync('calculadora.proto', { keepCase: tr
 const protoCalculadora = grpc.loadPackageDefinition(definicaoPacote).servico_calculadora;
 
 // Função principal do cliente:
-function iniciarCliente() {
+async function iniciarCliente() {
     // Instancia o Stub do cliente informando o endereço do servidor (localhost na porta 50051):
     const cliente = new protoCalculadora.ServicoCalculadora('localhost:50051', grpc.credentials.createInsecure());
 
-    // Define os valores estáticos que desejamos processar remotamente:
-    const dadosParaCalcular = { numero1: 20, numero2: 8 };
+    // Captura e valida o primeiro número:
+    const numero1 = await lerInteiro('Digite o primeiro número inteiro (X): ');
+
+    // Captura e valida o segundo número:
+    const numero2 = await lerInteiro('Digite o segundo número inteiro (Y): ');
 
     console.log(`Conectado ao servidor. Enviando números: X = ${dadosParaCalcular.numero1}, Y = ${dadosParaCalcular.numero2}`);
 
