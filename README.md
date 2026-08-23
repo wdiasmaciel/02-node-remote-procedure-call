@@ -153,7 +153,10 @@ Crie um arquivo chamado `entradaTeclado.js`. Ele conterá a função de leitura 
 // Importa o módulo nativo do Node.js para ler entradas do teclado:
 import readline from 'readline';
 
-// Função base (privada deste arquivo) para capturar o texto bruto do console:
+/* 
+ * Função base (privada deste arquivo) para capturar o texto bruto do console.
+ * Função auxiliar para criar uma pergunta no terminal que funciona com async/await.
+ */
 function lerTeclado(textoDaPergunta) {
     const interfaceLeitura = readline.createInterface({
         input: process.stdin,
