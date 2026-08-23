@@ -213,6 +213,10 @@ import grpc from '@grpc/grpc-js';
 // Importa o carregador de arquivos de especificação (.proto):
 import protoLoader from '@grpc/proto-loader';
 
+// Importa as funções do arquivo utilitário para leitura a partir do teclado. 
+// No Node.js com ES Modules, a extensão ".js" no caminho é obrigatória!
+import { lerInteiro } from './entradaTeclado.js';
+
 // Carrega o arquivo do contrato de forma síncrona mantendo a grafia original das variáveis:
 const definicaoPacote = protoLoader.loadSync('calculadora.proto', { keepCase: true });
 
