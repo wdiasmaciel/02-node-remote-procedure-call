@@ -282,9 +282,11 @@ iniciarCliente();
 
 **Resultado esperado no terminal do cliente:**
 ```text
-Conectando ao servidor. Enviando números: X = 20, Y = 8
-[SERVIDOR] Resultado da Soma: 28
-[SERVIDOR] Resultado da Subtração: 12
+Digite o primeiro número inteiro (X): 10
+Digite o segundo número inteiro (Y): 8
+Conectado ao servidor. Enviando números: X = 10, Y = 8
+[SERVIDOR] Resultado da Soma: 18
+[SERVIDOR] Resultado da Subtração: 2
 ```
 
 ---
