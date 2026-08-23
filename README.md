@@ -14,16 +14,20 @@ Os números são informados pelo usuário a partir do teclado.
 
 ## Passo 1: Configuração do Ambiente no Codespaces
 
-1. Abra o terminal do seu GitHub Codespaces.
-2. Inicialize o projeto Node.js executando o comando abaixo:
+1. Crie um arquivo ".gitignore" com o conteúdo abaixo:
+```text
+node_modules/
+```
+2. Abra o terminal do seu GitHub Codespaces.
+3. Inicialize o projeto Node.js executando o comando abaixo:
    ```bash
    npm init -y
    ```
-3. Instale as duas dependências oficiais do gRPC:
+4. Instale as duas dependências oficiais do gRPC:
    ```bash
    npm install @grpc/grpc-js @grpc/proto-loader
    ```
-4. **IMPORTANTE:** Abra o arquivo `package.json` que foi gerado e adicione a linha `"type": "module"` para permitir o uso de `import/export`. O seu arquivo deve ficar parecido com este:
+5. **IMPORTANTE:** Abra o arquivo `package.json` que foi gerado e adicione a linha `"type": "module"` para permitir o uso de `import/export`. O seu arquivo deve ficar parecido com este:
    ```json
    {
      "name": "grpc-calculadora",
