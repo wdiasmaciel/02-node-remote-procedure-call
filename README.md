@@ -145,7 +145,11 @@ iniciarServidor();
 
 ---
 
-## Passo 4: O Código do Cliente (`cliente.js`)
+## Passo 4: O Código para Ler Dados do Teclado
+
+---
+
+## Passo 5: O Código do Cliente (`cliente.js`)
 
 Crie um arquivo chamado **`cliente.js`**. Ele fará as chamadas de rede para o servidor remoto.
 
@@ -200,7 +204,7 @@ iniciarCliente();
 
 ---
 
-## Passo 5: Como Executar o Projeto
+## Passo 6: Como Executar o Projeto
 
 1. No terminal do Codespaces, inicialize o código do servidor:
    ```bash
