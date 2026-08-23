@@ -1,0 +1,25 @@
+// Define que estamos utilizando a versão mais recente do Protocol Buffers:
+syntax = "proto3";
+
+// Nome do pacote para evitar conflito de nomes em sistemas maiores:
+package servico_calculadora;
+
+// Estrutura de dados enviada pelo cliente (parâmetros de entrada):
+message RequisicaoMatematica {
+    int32 numero1 = 1; // Primeiro número inteiro (etiqueta de identificação binária 1, funciona como um ID).
+    int32 numero2 = 2; // Segundo número inteiro (etiqueta de identificação binária 2, funciona como um ID).
+}
+
+// Estrutura de dados retornada pelo servidor (resultado da operação):
+message RespostaMatematica {
+    int32 resultado = 1; // Resultado numérico final (etiqueta de identificação binária 1, funciona como um ID).
+}
+
+// Definição do Serviço (as funções que o servidor deixará disponíveis na rede):
+service ServicoCalculadora {
+    // Procedimento Remoto 1: Recebe dois números e retorna a soma deles:
+    rpc Somar (RequisicaoMatematica) returns (RespostaMatematica);
+
+    // Procedimento Remoto 2: Recebe dois números e retorna a subtração deles:
+    rpc Subtrair (RequisicaoMatematica) returns (RespostaMatematica);
+}
