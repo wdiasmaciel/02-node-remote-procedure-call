@@ -298,9 +298,9 @@ Conectado ao servidor. Enviando números: X = 10, Y = 8
 2. Usando gRPC, crie um serviço chamado `VerificadorTexto` capaz de validar se uma palavra é um **Palíndromo** (uma palavra que se lê da mesma forma de trás para frente, como "radar" ou "arara").
    * **Contrato (`.proto`):** defina uma mensagem de requisição que receba uma `string` (o texto a ser verificado) e uma resposta que retorne um campo `bool` (verdadeiro ou falso).
    * **Servidor:** implemente a lógica em JavaScript que remove espaços, ignora letras maiúsculas/minúsculas e verifica se a string é idêntica ao seu reverso.
-   * **Cliente:** deve enviar uma palavra para o servidor e exibir uma mensagem amigável dizendo se ela é ou não um palíndromo com base na resposta do procedimento remoto executado no servidor.
+   * **Cliente:** deve ler uma palavra a partir do teclado, enviar ao servidor e exibir uma mensagem amigável dizendo se ela é ou não um palíndromo com base na resposta do procedimento remoto executado no servidor.
 
 3. Usando gRPC, crie um simulador simplificado de **Sistema de Autenticação (Login)**.
    * **Contrato (`.proto`):** crie uma mensagem de requisição chamada `DadosLogin` contendo dois campos de texto: `usuario` e `senha`. A mensagem de resposta deve conter um campo `bool` chamado `sucesso` e um campo `string` chamado `mensagem`.
    * **Servidor:** armazene uma constante com um usuário e senha padrão (ex: `admin` e `senha123`). O servidor deve comparar os dados recebidos. Se estiverem corretos, retorna `sucesso = true` e `mensagem = "Acesso concedido!"`. Se estiverem incorretos, retorna `false` e uma mensagem de erro.
-   * **Cliente:** deve enviar um usuário e senha ao servidor e exibir o texto de boas-vindas ou de erro retornado pelo procedimento remoto.
+   * **Cliente:** deve ler um usuário e senha a partir do teclado, enviar ao servidor e exibir o texto de boas-vindas ou de erro retornado pelo procedimento remoto.
