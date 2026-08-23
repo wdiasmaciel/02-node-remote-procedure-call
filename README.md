@@ -1,4 +1,4 @@
-# 02-node-remote-procedure-call
+# 02-node-google-remote-procedure-call
 
 # Laboratório gRPC: Google Remote Procedure Call
 
