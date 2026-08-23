@@ -233,6 +233,8 @@ async function iniciarCliente() {
 
     // Captura e valida o segundo número:
     const numero2 = await lerInteiro('Digite o segundo número inteiro (Y): ');
+    
+    const dadosParaCalcular = { numero1, numero2 };
 
     console.log(`Conectado ao servidor. Enviando números: X = ${dadosParaCalcular.numero1}, Y = ${dadosParaCalcular.numero2}`);
 
@@ -245,17 +247,17 @@ async function iniciarCliente() {
         }
         // Exibe o resultado devolvido pelo servidor:
         console.log(`[SERVIDOR] Resultado da Soma: ${respostaSoma.resultado}`);
-
-        // Executa a Chamada de Procedimento Remoto (RPC) para a operação de SUBTRAIR:
-        cliente.Subtrair(dadosParaCalcular, (erroSubtracao, respostaSubtracao) => {
-            // Se houver erro na segunda chamada, exibe a falha e interrompe:
-            if (erroSubtracao) {
-                console.error('Falha na operação de Subtração:', erroSubtracao);
-                return;
-            }
-            // Exibe o resultado devolvido pelo servidor:
-            console.log(`[SERVIDOR] Resultado da Subtração: ${respostaSubtracao.resultado}`);
-        });
+    });
+    
+    // Executa a Chamada de Procedimento Remoto (RPC) para a operação de SUBTRAIR:
+    cliente.Subtrair(dadosParaCalcular, (erroSubtracao, respostaSubtracao) => {
+        // Se houver erro na segunda chamada, exibe a falha e interrompe:
+        if (erroSubtracao) {
+            console.error('Falha na operação de Subtração:', erroSubtracao);
+            return;
+        }
+        // Exibe o resultado devolvido pelo servidor:
+        console.log(`[SERVIDOR] Resultado da Subtração: ${respostaSubtracao.resultado}`);
     });
 }
 
