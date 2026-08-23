@@ -1,12 +1,14 @@
 # 02-node-remote-procedure-call
 
-# Laboratório gRPC: Calculadora Remota (Soma e Subtração)
+# Laboratório gRPC: Calculadora Remota Interativa (Soma e Subtração com Números Informados a partir do Teclado)
 
 Este repositório contém um exemplo prático e simplificado de **Sistemas Distribuídos** utilizando **gRPC** (Remote Procedure Call) em **Node.js**. 
 
 O gRPC é um *framework* de chamada de procedimento remoto (RPC) de código aberto criado pelo Google. Ele permite que um programa chame funções em outro computador como se fossem locais.
 
 O objetivo deste projeto é demonstrar como um cliente pode solicitar operações matemáticas (Soma e Subtração) para serem processadas por um servidor remoto de forma transparente.
+
+Os números são informados pelo usuário a partir do teclado.
 
 ---
 
