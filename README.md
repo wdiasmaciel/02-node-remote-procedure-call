@@ -15,9 +15,9 @@ Os números são informados pelo usuário a partir do teclado.
 ## Passo 1: Configuração do Ambiente no Codespaces
 
 1. Crie um arquivo ".gitignore" com o conteúdo abaixo:
-```text
-node_modules/
-```
+   ```text
+   node_modules/
+   ```
 2. Abra o terminal do seu GitHub Codespaces.
 3. Inicialize o projeto Node.js executando o comando abaixo:
    ```bash
