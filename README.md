@@ -14,7 +14,7 @@ Os números são informados pelo usuário a partir do teclado.
 
 ## Passo 1: Configuração do Ambiente no Codespaces
 
-1. Crie um arquivo ".gitignore" com o conteúdo abaixo:
+1. Crie um arquivo `.gitignore` com o conteúdo abaixo:
    ```text
    node_modules/
    ```
