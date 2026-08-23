@@ -164,6 +164,7 @@ function lerTeclado(textoDaPergunta) {
         output: process.stdout
     });
 
+    // Retorna uma Promise (promessa) que será resolvida quando o usuário apertar ENTER:
     return new Promise((resolver) => {
         interfaceLeitura.question(textoDaPergunta, (resposta) => {
             interfaceLeitura.close(); // Fecha a interface para liberar o terminal.
