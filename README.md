@@ -158,6 +158,7 @@ import readline from 'readline';
  * Função auxiliar para criar uma pergunta no terminal que funciona com async/await.
  */
 function lerTeclado(textoDaPergunta) {
+    // Configura a interface de leitura do teclado (entrada e saída padrão do terminal):
     const interfaceLeitura = readline.createInterface({
         input: process.stdin,
         output: process.stdout
