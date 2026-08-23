@@ -36,7 +36,7 @@ export async function lerTexto(mensagem) {
 
 // Captura um número do terminal e garante que ele seja um número inteiro válido:
 export async function lerInteiro(mensagem) {
-    const resposta = await fazerPergunta(mensagem);
+    const resposta = await lerTeclado(mensagem);
     const numero = parseInt(resposta, 10);
 
     // Valida se a conversão falhou ou se o número possui casas decimais:
