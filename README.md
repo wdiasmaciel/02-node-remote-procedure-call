@@ -1,7 +1,5 @@
 # 02-node-remote-procedure-call
 
-# 01-node-remote-procedure-call
-
 # Laboratório gRPC: Calculadora Remota (Soma e Subtração)
 
 Este repositório contém um exemplo prático e simplificado de **Sistemas Distribuídos** utilizando **gRPC** (Remote Procedure Call) em **Node.js**. 
