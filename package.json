@@ -1,0 +1,25 @@
+{
+  "name": "02-node-remote-procedure-call",
+  "version": "1.0.0",
+  "description": "Este repositório contém um exemplo prático e simplificado de **Sistemas Distribuídos** utilizando **gRPC** (Remote Procedure Call) em **Node.js**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdiasmaciel/02-node-remote-procedure-call.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/wdiasmaciel/02-node-remote-procedure-call/issues"
+  },
+  "homepage": "https://github.com/wdiasmaciel/02-node-remote-procedure-call#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.4",
+    "@grpc/proto-loader": "^0.8.1"
+  }
+}

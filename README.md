@@ -27,7 +27,7 @@ Os números são informados pelo usuário a partir do teclado.
    ```bash
    npm install @grpc/grpc-js @grpc/proto-loader
    ```
-5. **IMPORTANTE:** Abra o arquivo `package.json` que foi gerado e adicione a linha `"type": "module"` para permitir o uso de `import/export`. O seu arquivo deve ficar parecido com este:
+5. **IMPORTANTE:** abra o arquivo `package.json` que foi gerado e adicione a linha `"type": "module"` para permitir o uso de `import/export`. O seu arquivo deve ficar parecido com este:
    ```json
    {
      "name": "grpc-calculadora",
